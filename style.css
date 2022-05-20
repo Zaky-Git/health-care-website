@@ -1,0 +1,398 @@
+@import url(https://fonts.google.com/specimen/Montserrat);
+@import url(https://fonts.google.com/specimen/Roboto);
+
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.wrapper .topnav{
+    width: 100%;
+    height: 65px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.wrapper .topnav .left{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .topnav .left .logo a{
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #FFFFFF;
+    font-family: 'Montserrat',sans-serif;
+    margin-right: 25px;
+}
+
+.wrapper .topnav .right{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .topnav .right .search{
+    width: 200px;
+    margin: 0 12px;
+}
+
+.wrapper .topnav .right .search input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.wrapper .topnav .right .search input[type=text]:focus{
+    border: 3px solid #E8F9FD;
+}
+
+.wrapper .topnav .right .akun{
+    margin-left: 10px;
+}
+
+.wrapper .topnav .right .akun a{
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+    text-decoration: none;
+}
+
+
+.wrapper .topnav .right .akun a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .topnav .right .akun img{
+    margin-top: 30px;
+    position: absolute;
+    color: white;
+    margin-left: 5px;
+}
+
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    top: 0;
+    background: #307FE2;
+    border-bottom: 1px solid white;
+}
+
+nav .wrapper .beranda {
+    margin: auto;
+}
+
+nav .wrapper .services {
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    padding: 0 22px;
+    text-align: center;
+    display: inline-block;
+}
+
+.menu ul li a {
+    color: #FFFFFF;
+    font-family: 'Montserrat',sans-serif;
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li a:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 28px;
+    left: 0;
+    background-color: white;
+    transform-origin: center left right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center left right;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+section .beranda{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+section .services{
+    padding: 0;
+    margin: 0;
+}
+
+.isi1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+}
+
+.isi2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-family:'Roboto', sans-serif;
+}
+
+.isi2 .deskripsi {
+    font-size: 25px;
+    font-weight: bold;
+    color: #364f6b;
+}
+
+h1 {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #333;
+    width: 100%;
+    text-transform: capitalize;
+    line-height: 45px;
+}
+
+a.daftar-pass {
+    background: #307FE2;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.daftar-pass:hover {
+    background: #F24D4E;
+}
+
+p {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.list_dokter {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.Dokter_kami {
+    width: 15%;
+    margin: 0 auto;
+}
+
+.Dokter_kami img {
+    width: 80%;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+
+.Dokter_kami p {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+
+.daftar{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.form{
+    text-align: center;
+    width: 100%;
+}
+.form input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form input[type=text]{
+    transition: 0.5s;
+    outline: none;
+
+}
+
+.form input[type=text]:focus{
+    border: 3px solid #000000;
+    border-radius: 25px;
+    
+}
+
+.sellect1{
+    transition: 0.5s;
+    outline: none;
+}
+
+.sellect1:focus{
+    border: 3px solid #000000;
+    border-radius: 25px;
+}
+
+
+input[type=submit] {
+    width: 50%;
+    background-color: #307FE2;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: #206fd0;
+}
+
+.form{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+}
+
+.radio{
+    margin-top: -15px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.jenis-kelamin{
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    margin-left: 460px;
+    position: absolute;
+}
+
+input[type=radio]{
+    margin-top: 5px;
+}
+
+.birthday{
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    margin-left: 600px;
+    position: absolute;
+}
+
+
+.footer{
+    width: 100%;
+    background: #D0CFCF;
+    text-align: center;
+    bottom: 0;
+}
+
+.footer-content{
+    text-align: center;
+}
+
+.footer2{
+    width: 100%;
+    background: #D0CFCF;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+}
+
+.footer2-content{
+    text-align: center;
+}
+
+.list_item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.item {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.item img {
+    width: 80%;
+}
+
+.item p {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+.item img:hover{
+    width: 90%;
+    transition: 0.3s;
+}
